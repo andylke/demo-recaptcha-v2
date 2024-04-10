@@ -1,1 +1,4 @@
-
+google:
+  recaptcha:
+    site-key: "6LdafLYpAAAAAILLdeDN4FwmHVk-6514uxjQGVkG"
+    secret-key: "6LdafLYpAAAAAPzXV-iTC9rcaBRIgFK0Dmx5_ui1"

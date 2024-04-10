@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="EN" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+	<title>Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="#" method="post" th:action="@{/}">
+	<div class="g-recaptcha" th:data-sitekey="${siteKey}"></div>
+	<br />
+	<input type="submit" value="Submit" />
+	<br />
+  <div th:if="${!#strings.isEmpty(success)}">
+    <span th:if="${success}">Success</span>
+    <span th:if="!${success}" th:each="error : ${errors}" th:text="${error}" /></span>
+  </div>
+</form>
+
+</body>
+</html>
